@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>autoboxing</title>
+</head>
+<body>
+  <script>
+    let primitiveString = "Hello, World!";
+
+// Autoboxing occurs when you access a method on the primitive
+let stringLength = primitiveString.length; // The primitive string is temporarily wrapped in a String object
+
+console.log("Length of the string:", stringLength);
+
+// You can also create an explicit wrapper object, though it's rarely needed
+let wrappedString = new String("Hello, World!");
+
+console.log("Wrapped string length:", wrappedString.length);
+console.log("Type of primitiveString:", typeof primitiveString); // "string"
+console.log("Type of wrappedString:", typeof wrappedString); // "object"
+
+  </script>
+</body>
+</html>
